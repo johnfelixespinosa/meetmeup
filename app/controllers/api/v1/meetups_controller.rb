@@ -1,5 +1,11 @@
-class Api::v1::MeetupsController < ApplicationController
+class Api::V1::MeetupsController < ApplicationController
   before_action :find_meetup, only: [:show, :update, :destroy]
+
+  def search
+  end
+
+  def get_meetup
+  end
   
   def index
     @meetups = Meetup.all

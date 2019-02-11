@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Meetup.create(group_name: 'NoVA Code & Coffee', event_id: 258331510, date: "2019-02-09", venue_name: "Customink", venue_address: "2910 District Avenue", venue_city: "Fairfax")

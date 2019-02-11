@@ -28,7 +28,14 @@ class Api::v1::MeetupsController < ApplicationController
   private
 
     def meetup_params
-      params.require(:meetup).permit(:name)
+      params.require(:meetup).permit(
+        :group_name,
+        :event_id,
+        :date,
+        :venue_name,
+        :venue_address,
+        :venue_city
+        )
     end
 
     def find_meetup
